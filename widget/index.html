@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Localização e Clima</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.cookie.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="locationclimate.js"></script>
+    </head>
+    <body>
+        <div class="row" >
+           <div class="col-lg-1"></div>
+            <div class="col-lg-3" id="box-members">
+                <div class="small-box btn-success" >
+                    
+                    <div id="status">Carregando.............</div>
+                    <div style="font-size: 24px; text-align:  center; font-family: inherit">
+                        <label> <cidade></cidade></label>
+                    </div>
+                    <div style = "text-align: center">
+                        <div id="map" style ="margin: 1px"></div>
+                    </div>
+                    <form role="form">
+                        <div class="row" style= "padding: 3%; padding: 2%">
+                           
+                            <div class="form-group col-lg-6 btn-default" style="text-align: center">
+                                <label>Temperatura</label></br>
+                            <label style="font-size: 24px; text-align:  center; font-family: inherit"> <temperatura></temperatura> ºC</label>
+                        </div>
+
+                        <div class="form-group col-lg-6 btn-default" style="text-align: center;">
+                            <label>Umidade</label></br>
+                        <label style="font-size: 24px; text-align:  center; font-family: inherit"><umidade></umidade>%</label>
+                        </div>
+                        
+                </div> 
+                <div class="panel-body" style="text-align: center">
+                <input class='btn btn-default' id='check' value='Minha Localização'/> 
+              </div>
+                </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
