@@ -35,9 +35,9 @@ $(document).ready(function() {
         $.cookie("MyLon", position.coords.longitude); // Storing longitude value
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
-        console.log("http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&lang=pt&units=metric&");
+        console.log("http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&lang=pt&units=metric&appid=452d88ad415c8f174b51d20d51edb0d6");
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&lang=pt&units=metric&"
+            url: "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&lang=pt&units=metric&appid=452d88ad415c8f174b51d20d51edb0d6"
         }).then(function(data) {
 
             $('cidade').append(data.name);
